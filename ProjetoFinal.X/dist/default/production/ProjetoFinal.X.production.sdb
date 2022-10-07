@@ -1,0 +1,494 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"8 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/i2c.h
+[v _delay delay `(v  1 e 1 0 ]
+"20
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+"27
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"36
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"45
+[v _i2c_wb i2c_wb `(v  1 e 1 0 ]
+"63
+[v _i2c_rb i2c_rb `(uc  1 e 1 0 ]
+"94
+[v _e2pext_r e2pext_r `(uc  1 e 1 0 ]
+"130
+[v _e2pext_w e2pext_w `(v  1 e 1 0 ]
+"5 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/rtc.h
+[v _getd getd `(uc  1 e 1 0 ]
+"10
+[v _getu getu `(uc  1 e 1 0 ]
+"16
+[v _rtc_r rtc_r `(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"30 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\lcd.c
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+"35
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+"46
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+"57
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"76
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+"11 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\principal.c
+[v _main main `(v  1 e 1 0 ]
+"220
+[v _escolha escolha `(i  1 e 2 0 ]
+"277
+[v _trocarSenha trocarSenha `(v  1 e 1 0 ]
+"34 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\teclado.c
+[v _tc_tecla tc_tecla `(uc  1 e 1 0 ]
+"1 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/rtc.h
+[v _date date `VE[10]uc  1 e 10 0 ]
+"2
+[v _time time `VE[10]uc  1 e 10 0 ]
+"3
+[v _novo novo `VE[10]uc  1 e 10 0 ]
+"271 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S352 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"315
+[s S361 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S370 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S379 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[s S381 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S384 . 1 `S352 1 . 1 0 `S361 1 . 1 0 `S370 1 . 1 0 `S379 1 . 1 0 `S381 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES384  1 e 1 @3969 ]
+[s S151 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"497
+[s S191 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S200 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S209 . 1 `uc 1 T1CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+]
+[s S213 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S217 . 1 `S151 1 . 1 0 `S191 1 . 1 0 `S200 1 . 1 0 `S209 1 . 1 0 `S213 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES217  1 e 1 @3970 ]
+"632
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S566 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"669
+[s S575 . 1 `uc 1 PSP0 1 0 :1:0 
+`uc 1 PSP1 1 0 :1:1 
+`uc 1 PSP2 1 0 :1:2 
+`uc 1 PSP3 1 0 :1:3 
+`uc 1 PSP4 1 0 :1:4 
+`uc 1 PSP5 1 0 :1:5 
+`uc 1 PSP6 1 0 :1:6 
+`uc 1 PSP7 1 0 :1:7 
+]
+[s S584 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 P1B 1 0 :1:5 
+`uc 1 P1C 1 0 :1:6 
+`uc 1 P1D 1 0 :1:7 
+]
+[s S589 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S592 . 1 `S566 1 . 1 0 `S575 1 . 1 0 `S584 1 . 1 0 `S589 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES592  1 e 1 @3971 ]
+[s S25 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"832
+[s S30 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 MCLR 1 0 :1:3 
+]
+[s S35 . 1 `uc 1 NOT_RD 1 0 :1:0 
+]
+[s S37 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_WR 1 0 :1:1 
+]
+[s S40 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_CS 1 0 :1:2 
+]
+[s S43 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_MCLR 1 0 :1:3 
+]
+[s S46 . 1 `uc 1 nRD 1 0 :1:0 
+`uc 1 nWR 1 0 :1:1 
+`uc 1 nCS 1 0 :1:2 
+`uc 1 nMCLR 1 0 :1:3 
+]
+[s S51 . 1 `uc 1 AN5 1 0 :1:0 
+`uc 1 AN6 1 0 :1:1 
+`uc 1 AN7 1 0 :1:2 
+`uc 1 VPP 1 0 :1:3 
+]
+[s S56 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+]
+[s S61 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+]
+[u S66 . 1 `S25 1 . 1 0 `S30 1 . 1 0 `S35 1 . 1 0 `S37 1 . 1 0 `S40 1 . 1 0 `S43 1 . 1 0 `S46 1 . 1 0 `S51 1 . 1 0 `S56 1 . 1 0 `S61 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES66  1 e 1 @3972 ]
+"1477
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1699
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1921
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S142 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1953
+[u S160 . 1 `S142 1 . 1 0 `S151 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES160  1 e 1 @3988 ]
+"2143
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2365
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S265 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"2393
+[u S279 . 1 `S265 1 . 1 0 `S25 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES279  1 e 1 @3990 ]
+"4619
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4690
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4775
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S646 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4819
+[s S649 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S653 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S660 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S663 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S666 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S669 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S672 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S675 . 1 `S646 1 . 1 0 `S649 1 . 1 0 `S653 1 . 1 0 `S660 1 . 1 0 `S663 1 . 1 0 `S666 1 . 1 0 `S669 1 . 1 0 `S672 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES675  1 e 1 @4034 ]
+"4901
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4908
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"7 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\principal.c
+[v _est est `ui  1 e 2 0 ]
+[v _cond cond `ui  1 e 2 0 ]
+"32 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\teclado.c
+[v _linha linha `C[4]uc  1 e 4 0 ]
+"11 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\principal.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+[v main@temp temp `ui  1 a 2 32 ]
+[v main@opc opc `ui  1 a 2 30 ]
+"218
+} 0
+"277
+[v _trocarSenha trocarSenha `(v  1 e 1 0 ]
+{
+"281
+[v trocarSenha@senha senha `[5]uc  1 a 5 22 ]
+"279
+[v trocarSenha@tmp tmp `uc  1 a 1 29 ]
+"280
+[v trocarSenha@i i `uc  1 a 1 28 ]
+[v trocarSenha@cont cont `uc  1 a 1 27 ]
+"355
+} 0
+"130 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/i2c.h
+[v _e2pext_w e2pext_w `(v  1 e 1 0 ]
+{
+"132
+[v e2pext_w@tmp tmp `ui  1 a 2 18 ]
+"135
+[v e2pext_w@nt nt `uc  1 a 1 17 ]
+"134
+[v e2pext_w@al al `uc  1 a 1 16 ]
+"133
+[v e2pext_w@ah ah `uc  1 a 1 15 ]
+"130
+[v e2pext_w@addr addr `ui  1 p 2 10 ]
+[v e2pext_w@val val `uc  1 p 1 12 ]
+"160
+} 0
+"16 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/rtc.h
+[v _rtc_r rtc_r `(v  1 e 1 0 ]
+{
+"18
+[v rtc_r@tmp tmp `uc  1 a 1 5 ]
+"61
+} 0
+"10
+[v _getu getu `(uc  1 e 1 0 ]
+{
+[v getu@nn nn `uc  1 a 1 wreg ]
+[v getu@nn nn `uc  1 a 1 wreg ]
+"12
+[v getu@nn nn `uc  1 a 1 0 ]
+"13
+} 0
+"5
+[v _getd getd `(uc  1 e 1 0 ]
+{
+[v getd@nn nn `uc  1 a 1 wreg ]
+[v getd@nn nn `uc  1 a 1 wreg ]
+"7
+[v getd@nn nn `uc  1 a 1 0 ]
+"8
+} 0
+"57 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"74
+} 0
+"20 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/i2c.h
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"220 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\principal.c
+[v _escolha escolha `(i  1 e 2 0 ]
+{
+"224
+[v escolha@senha senha `[5]uc  1 a 5 14 ]
+"222
+[v escolha@tmp tmp `uc  1 a 1 21 ]
+"223
+[v escolha@i i `uc  1 a 1 20 ]
+[v escolha@cont cont `uc  1 a 1 19 ]
+"275
+} 0
+"34 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\teclado.c
+[v _tc_tecla tc_tecla `(uc  1 e 1 0 ]
+{
+"40
+[v tc_tecla@timeout timeout `ui  1 a 2 4 ]
+"36
+[v tc_tecla@to to `ui  1 a 2 1 ]
+"37
+[v tc_tecla@i i `uc  1 a 1 7 ]
+"38
+[v tc_tecla@ret ret `uc  1 a 1 6 ]
+"39
+[v tc_tecla@tmp tmp `uc  1 a 1 3 ]
+"90
+} 0
+"76 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X\lcd.c
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+{
+"78
+[v lcd_str@i i `uc  1 a 1 7 ]
+"76
+[v lcd_str@str str `*.35Cuc  1 p 2 3 ]
+"85
+} 0
+"46
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+{
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+"48
+[v lcd_dat@val val `uc  1 a 1 2 ]
+"55
+} 0
+"35
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+{
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+"37
+[v lcd_cmd@val val `uc  1 a 1 2 ]
+"44
+} 0
+"30
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+{
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+"32
+[v lcd_wr@val val `uc  1 a 1 0 ]
+"33
+} 0
+"94 D:\Faculdade\6 semestre\Microcontrolador\ProjetoFinal.X/i2c.h
+[v _e2pext_r e2pext_r `(uc  1 e 1 0 ]
+{
+"97
+[v e2pext_r@ah ah `uc  1 a 1 9 ]
+"98
+[v e2pext_r@al al `uc  1 a 1 8 ]
+"96
+[v e2pext_r@ret ret `uc  1 a 1 7 ]
+"94
+[v e2pext_r@addr addr `ui  1 p 2 5 ]
+"127
+} 0
+"45
+[v _i2c_wb i2c_wb `(v  1 e 1 0 ]
+{
+[v i2c_wb@val val `uc  1 a 1 wreg ]
+"47
+[v i2c_wb@i i `uc  1 a 1 3 ]
+"45
+[v i2c_wb@val val `uc  1 a 1 wreg ]
+"48
+[v i2c_wb@val val `uc  1 a 1 2 ]
+"61
+} 0
+"36
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"43
+} 0
+"27
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"34
+} 0
+"63
+[v _i2c_rb i2c_rb `(uc  1 e 1 0 ]
+{
+[v i2c_rb@ack ack `uc  1 a 1 wreg ]
+"65
+[v i2c_rb@i i `uc  1 a 1 4 ]
+"66
+[v i2c_rb@ret ret `uc  1 a 1 3 ]
+"63
+[v i2c_rb@ack ack `uc  1 a 1 wreg ]
+"66
+[v i2c_rb@ack ack `uc  1 a 1 2 ]
+"89
+} 0
+"8
+[v _delay delay `(v  1 e 1 0 ]
+{
+"18
+} 0
